@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Triathlon</title>
+    <style>
+      body {
+        background: linear-gradient(
+          360deg,
+          rgb(216, 50, 27) 1%,
+          rgb(143, 41, 22) 50%,
+          rgb(214, 31, 58) 100%
+        );
+      }
+      h1 {
+        text-align: center;
+        line-height: 1.5;
+        margin: 0 auto;
+        color: #d61f3a;
+        font-size: 48px;
+        font-weight: 400;
+      }
+      h2 {
+        text-align: center;
+        color: white;
+        background-color: #d61f3a;
+        margin: 10px 20px;
+        padding: 15px 30px;
+        border-radius: 5px;
+        font-size: 24px;
+        font-weight: 400;
+      }
+      h4 {
+        font-size: 24px;
+        opacity: 0.7;
+      }
+      p {
+        line-height: 1.5;
+        font-size: 14px;
+        color: white;
+        opacity: 0.9;
+      }
+      button {
+        display: block;
+        margin: 10px auto;
+        background: #d61f3a;
+        color: white;
+        font-size: 18px;
+        padding: 15px 10px;
+        border: none;
+        cursor: pointer;
+      }
+      button:hover {
+        opacity: 0.9;
+        color: white;
+        border: none;
+        background: gray;
+        transition: all 150ms ease-in-out;
+      }
+      .container {
+        margin: 0 auto;
+        padding: 20px 20px;
+        background-color: #0c0e0f;
+        border-radius: 20px;
+        font-family: sans-serif;
+        max-width: 1000px;
+      }
+      .image {
+        text-align: center;
+        display: block;
+      }
+      .kind {
+        margin: 10px 10px;
+        padding: 5px 5px;
+        text-align: center;
+        border-radius: 5px;
+        box-shadow: 2px 2px 5px white;
+        background: white;
+        width: 300px;
+      }
+      .info {
+        padding-top: 20px;
+        text-decoration: none;
+        color: white;
+        font-size: 14px;
+        opacity: 0.9;
+      }
+      .info:hover {
+        text-decoration: underline;
+      }
+      .owner {
+        text-align: center;
+        text-decoration: none;
+        color: white;
+      }
+      .owner:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>
+        Ironman Triathlon
+        <img
+          class="logo"
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/038/144/original/849dcf7c28145f9237e1734677b78710.jpg?1655913150"
+          alt="logo"
+          width="50px"
+        />
+      </h1>
+      <h2>Sports reveal as well as build your character.</h2>
+      <div class="image">
+        <img
+          class="kind"
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/037/981/original/ee188750d920fd28bfdb6dda37b3bcc5.jpg?1655816406"
+          alt="swim"
+        />
+        <img
+          class="kind"
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/037/980/original/b9dabe360b924ecaa66df7da1bf81db9.jpg?1655816349"
+          alt="bike"
+        />
+        <img
+          class="kind"
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/037/782/original/141078-1120x746.jpg?1655660841"
+          alt="run"
+        />
+      </div>
+      <p>
+        <strong>
+          An Ironman Triathlon is one of a series of long-distance triathlon
+          races organized by the World Triathlon Corporation (WTC), consisting
+          of a 2.4-mile (3.86 km) swim, a 112-mile (180.25 km) bicycle ride and
+          a marathon 26.22-mile (42.20 km) run, raced in that order. It is
+          widely considered one of the most difficult one-day sporting events in
+          the world.Most Ironman events have a time limit of 16 or 17 hours to
+          complete the race, course dependent, with the race typically starting
+          at 7:00am. The mandatory cut off time to complete the 2.4-mile (3.86
+          km) swim is 2 hours 20 minutes. The mandatory bike cut off time for
+          when an athlete must have completed their swim, transition and bike
+          varies generally between 10 hours and 10 hours 30 minutes from when an
+          athlete began their swim. The mandatory run cut off varies between 16
+          and 17 hours from when athlete began their swim. Many races will also
+          have intermediate bike, run, and transition cut off times specific to
+          each race venue. Any participant who completes the triathlon within
+          these time constraints is designated an Ironman.
+        </strong>
+        <br />
+      </p>
+      <a
+        href="https://en.wikipedia.org/wiki/Ironman_Triathlon"
+        target="_blank"
+        class="info"
+      >
+        Learn more on Wikipedia
+      </a>
+      <button class="chooseRace">Find a race▷</button>
+      <hr />
+      <p class="owner">
+        <em
+          >This page was build by
+          <a
+            href="https://www.instagram.com/anastasia.pankovaa/?igshid=YmMyMTA2M2Y="
+            target="_blank"
+            class="owner"
+            by
+          >
+            Anastasiia Pankova
+          </a>
+        </em>
+      </p>
+    </div>
+    <script>
+      function registerRace() {
+        let name = prompt("What is your first name?");
+        let email = prompt("What is you email adress?");
+        let age = prompt("How old are you?");
+        if (age >= 18) {
+          alert(
+            "Congratulation," +
+              name +
+              "!" +
+              "You are registered.All information about race we will send to your email.🤝"
+          );
+        } else {
+          alert("Sorry," + name + "!" + "You can't join race☹");
+        }
+      }
+      let register = document.querySelector(".chooseRace");
+      register.addEventListener("click", registerRace);
+    </script>
+  </body>
+</html>
+logo
